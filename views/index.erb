@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" type="text/css" href="<%= url("/style.css")%>">
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -12,8 +13,187 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <body>
+    <div class="container">
+      <div class="row title center">
+        <div class="col-md-12">
+          <h3>
+            <%= "#{@data.user.first_name} " "#{@data.user.last_name}" %>
+            Resume
+          </h3>
+        </div>
+      </div>
+      <br>
+
+      <div class="row user">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8 center">
+            <h6>
+              <%= @data.user.profile %>
+            </h6>
+          </div>
+        </div>
+        <h3 class="center">User</h3>
+        <br>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            First Name:
+          </div>
+
+          <div class="col-md-4">
+            <%= @data.user.first_name %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            Last Name:
+          </div>
+
+          <div class="col-md-4">
+            <%= @data.user.last_name %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            DOB:
+          </div>
+
+          <div class="col-md-4">
+            <%= @data.user.dob %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            Email:
+          </div>
+
+          <div class="col-md-4">
+            <%= @data.user.email %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            Phone:
+          </div>
+
+          <div class="col-md-4">
+            <%= @data.user.phone %>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row educations">
+        <div class="col-md-12">
+          <h3 class="center">Educations</h3>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Level</th>
+                <th>Program</th>
+                <th>Campus</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @data.educations.each do |edu| %>
+                <tr>
+                  <td><%= edu.edu_type %></td>
+                  <td><%= edu.program %></td>
+                  <td><%= edu.campus %></td>
+                  <td><%= edu.year %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br>
+
+      <div class="row experiences">
+        <div class="col-md-12">
+          <h3 class="center">Experiences</h3>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @data.experiences.each do |exp| %>
+                <tr>
+                  <td><%= exp.company %></td>
+                  <td><%= exp.role %></td>
+                  <td><%= exp.year %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br>
+
+      <div class="row skills">
+        <div class="col-md-12">
+          <h3 class="center">Skills</h3>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Skill</th>
+                <th>Percentage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @data.skills.each do |ski| %>
+                <tr>
+                  <td><%= ski.skill %></td>
+                  <td><%= ski.percentage %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br>
+
+       <div class="row references">
+        <div class="col-md-12">
+          <h3 class="center">References</h3>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @data.references.each do |ref| %>
+                <tr>
+                  <td><%= ref.company %></td>
+                  <td><%= ref.name %></td>
+                  <td><%= ref.phone %></td>
+                  <td><%= ref.email %></td>
+                  <td><%= ref.role %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br>
+
+
+
+    </div>
+
   </body>
 </html>
-
-
-
