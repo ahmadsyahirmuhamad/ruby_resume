@@ -1,0 +1,91 @@
+{
+  "user":
+  {
+    "first_name" : "ahmad",
+    "last_name" : "syahir",
+    "dob" : "1/4/1991",
+    "profile" : "An experienced web developer with a strong interesting projects that require both conceptual and analytical thinking. Fully-committed to designing and developing innovative web-based materials that users will love. Always eager to learn more tricks from anyone-regardless of the industry they're working in."
+  },
+
+  "educations":
+  [
+    {
+      "edu_type" : "certificate",
+      "program" : "bootCamp ruby on rails",
+      "campus" : "magic, cyberjaya, malaysia",
+      "year" : "2014 - 2014"
+    },
+    {
+      "edu_type" : "degree",
+      "program" : "bachelor in computer science",
+      "campus" : "management and science university, shah alam, malaysia",
+      "year" : "2012 - 2014"
+    },
+    {
+      "edu_type" : "diploma",
+      "program" : "diploma in information technology",
+      "campus" : "advance management and technology centre, kuala lumpur, malaysia",
+      "year" : "2012 - 2014"
+    }
+  ],
+
+  "experiences":
+  [
+    {
+      "company" : "wobb sdn. bhd.",
+      "role" : "web developer",
+      "year" : "2014 - present"
+    },
+    {
+      "company" : "kometsoft sdn. bhd.",
+      "role" : "junior web developer",
+      "year" : "2013 - 2014"
+    }
+  ],
+
+  "references":
+  [
+    {
+      "company" : "wobb sdn. bhd.",
+      "name" : "derek toh",
+      "phone" : "+6013‐6007379",
+      "email" : "derek@wobb.co",
+      "role" : "founder"
+    },
+    {
+      "company" : "next academy sdn. bhd.",
+      "name" : "josh teng",
+      "phone" : "+6012‐3291985",
+      "email" : "tengjosh@gmail.com",
+      "role" : "founder"
+    }
+  ],
+
+  "skills":
+  [
+    {
+      "skill" : "html",
+      "percentage" : "100"
+    },
+    {
+      "skill" : "css",
+      "percentage" : "80"
+    },
+    {
+      "skill" : "js",
+      "percentage" : "80"
+    },
+    {
+      "skill" : "ruby",
+      "percentage" : "90"
+    },
+    {
+      "skill" : "python",
+      "percentage" : "60"
+    },
+    {
+      "skill" : "sql",
+      "percentage" : "80"
+    }
+  ]
+}
